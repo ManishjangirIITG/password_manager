@@ -130,14 +130,14 @@ const Manager = () => {
                     <span className="text-green-500">OP/&gt;</span>
                 </h1>
                 <p className='text-green-900 text-lg  text-center'>Your own Password Manager</p>
-                <div className="text-black flex flex-col p-4 gap-4 items-center">
+                <div className="text-black w-[80%] mx-auto flex flex-col p-4 gap-4 items-center">
                     <input value={form.site} onChange={handleChange} placeholder='Enter Website URL' className='rounded-full border border-green-500 w-full p-4 py-1 text-black' type="text" name="site" id="site" />
                     <div className="flex flex-col md:flex-row w-full gap-3">
                         <input value={form.username} onChange={handleChange} placeholder='Enter Username' className='rounded-full border border-green-500 w-full p-4 py-1 text-black' type="text" name='username' id='username' />
                         <div className="relative">
                             <input ref={passwordRef} value={form.password} onChange={handleChange} placeholder='Enter Password' className='rounded-full border border-green-500 w-full p-6 py-1 text-black ' type="password" name='password' id='password' />
                             <span className='absolute right-[2px] top-[5px] cursor-pointer' onClick={showPassword}>
-                                <img ref={ref} className='p-1' width={25} src="/images/eye-svgrepo-com.svg" alt="eye" />
+                                <img ref={ref} className='p-1' width={25} src="./images/eye-svgrepo-com.svg" alt="eye" />
                             </span>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ const Manager = () => {
                     <h2 className='text-center font-bold text-xl py-2' >Your Passwords</h2>
                     {passwordArray.length === 0 && <div className='text-center py-4 text-lg font-bold '>No passwords to show</div>}
                     {passwordArray.length != 0 &&
-                        < table className="table-auto w-full overflow-hidden rounded-md my-4">
+                        < table className="table-auto w-[80%] mx-auto overflow-hidden rounded-md my-4">
                             <thead className='bg-green-800 text-white'>
                                 <tr>
                                     <th className='py-2'>Site</th>
