@@ -8,6 +8,9 @@ export default defineConfig({
   server: {
     fs: {
       strict: false
+    },
+    mimeTypes: {
+      'text/javascript': ['js','jsx']
     }
   }
 })
